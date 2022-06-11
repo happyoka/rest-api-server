@@ -1,4 +1,4 @@
-ame: Deploy Frontend
+name: Deploy Rest API Server
 on:
   push:
     branches:
