@@ -12,7 +12,8 @@ RUN chmod +x /tini
 ENTRYPOINT ["/tini", "--"]
 
 # Exposing a port
-EXPOSE 5000
+EXPOSE 8080
+EXPOSE 80
 
 WORKDIR '/app'
 COPY build/libs/*.jar /app/spring-boot-application.jar

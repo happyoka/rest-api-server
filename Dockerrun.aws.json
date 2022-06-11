@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "server-api",
+      "image": "dreamoka/server-sample:latest",
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 8080
+        }
+      ],
+      "essential": true,
+      "memoryReservation": 128
+    }
+  ]
+}
