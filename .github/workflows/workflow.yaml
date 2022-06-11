@@ -2,7 +2,7 @@ ame: Deploy Frontend
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
