@@ -4,4 +4,4 @@ services:
     image: "dreamoka/server-sample"
     hostname: client
     ports:
-      - "9001:9001"
+      - "5000:5000"
