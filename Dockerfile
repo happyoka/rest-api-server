@@ -11,8 +11,9 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 ENTRYPOINT ["/tini", "--"]
 
-#EXPOSE
-EXPOSE 9001
+# Exposing a port
+EXPOSE 8080
+EXPOSE 80
 
 WORKDIR '/app'
 COPY build/libs/*.jar /app/spring-boot-application.jar
